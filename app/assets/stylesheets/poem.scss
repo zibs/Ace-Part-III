@@ -1,0 +1,42 @@
+// Place all the styles related to the Poem controller here.
+// They will automatically be included in application.css.
+// Place all the styles related to the Poem controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+body {
+    // font-family: 'Open Sans', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
+    // width: 70%;
+    margin: 0 auto;
+}
+.alert {
+    position: absolute;
+}
+
+.poem-title {
+    margin: 8% 0 5% 0;
+    font-family: "Roboto";
+    font-size: 2em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    
+}
+.line-wrapper {
+
+}
+
+p {
+    font-size: 1em;
+
+}
+
+.closing-couplet {
+    font-size: 5em;
+    font-style: italic;
+
+}
+
+// pseudo collection:
+// first-letter and :first-line// You can use Sass (SCSS) here: http://sass-lang.com/

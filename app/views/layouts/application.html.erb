@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+ <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<main class="container the-long-poem-wrapper">
+	<% flash.each do |message_type, message | %>
+        <%=content_tag(:div, message, class: "fade-out alert alert-#{message_type}", style: "display:inline-block") %>
+        <% end %> 
+<%= yield %>
+</main>
+</body>
+</html>
