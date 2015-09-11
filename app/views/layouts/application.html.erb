@@ -9,7 +9,7 @@
  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<main class="container the-long-poem-wrapper">
+<main class="container-fluid the-long-poem-wrapper">
 	<% flash.each do |message_type, message | %>
         <%=content_tag(:div, message, class: "fade-out alert alert-#{message_type}", style: "display:inline-block") %>
         <% end %> 

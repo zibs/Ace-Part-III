@@ -2,33 +2,34 @@
 <%= @new_word %>
 </h1>
 
+<!-- PLACE THE FIRST TWO LINES TOGETHER -->
 <section class="row line-wrapper"> 
-		<section class="lefto col-md-6">
+		<section class="lefto col-md-3">
 			<p> <%= @first_left.join(" ") %> </p>
 		</section>
-		<section class="righty col-md-6">
+		<section class="righty col-md-3">
 			<p> <%= @first_right.join(" ") %> </p>
 		</section>	
 	</section>
-
+<!-- PLACE SHUFFLEDPOEM -->
 <% @Ace.in_groups_of(2, false) do |shard| %>
 
 	<section class="row line-wrapper"> 
-		<section class="lefto col-md-6">
+		<section class="lefto col-md-3">
 			<p> <%= shard[0].join(" ") %> </p>
 		</section>
-		<section class="righty col-md-6">
+		<section class="righty col-md-3">
 			<p> <%= shard[1].join(" ") if shard[1].present? %> </p>
 		</section>
 	</section>
 
 <% end %>
-
+<!-- PLACE THE LAST LINES TOGETHER -->
 <section class="row line-wrapper"> 
-		<section class="lefto col-md-6">
+		<section class="lefto col-md-3">
 			<p> <%= @last_left.join(" ") %> </p>
 		</section>
-		<section class="righty col-md-6">
+		<section class="righty col-md-3">
 			<p> <%= @last_right.join(" ") %> </p>
 		</section>	
 </section>
