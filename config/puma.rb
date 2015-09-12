@@ -1,4 +1,4 @@
-#change to match your CPU core count
+#Change to match your CPU core count
 workers 1
 
 # Min and Max threads per worker
@@ -27,4 +27,3 @@ on_worker_boot do
   ActiveRecord::Base.connection.disconnect! rescue ActiveRecord::ConnectionNotEstablished
   ActiveRecord::Base.establish_connection(YAML.load_file("#{app_dir}/config/database.yml")[rails_env])
 end
-

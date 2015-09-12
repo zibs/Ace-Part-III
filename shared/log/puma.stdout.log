@@ -1,0 +1,30 @@
+=== puma startup: 2015-09-12 00:34:34 -0700 ===
+[24160] * Starting control server on unix:///tmp/puma-status-1442043274003-24160
+[24166] + Gemfile in context: /home/raworth/ace/Gemfile
+[24173] + Gemfile in context: /home/raworth/ace/Gemfile
+[24177] + Gemfile in context: /home/raworth/ace/Gemfile
+[24183] + Gemfile in context: /home/raworth/ace/Gemfile
+[24160] - Gracefully shutting down workers...
+[24183] Early termination of worker
+[24160] === puma shutdown: 2015-09-12 00:34:54 -0700 ===
+[24160] - Goodbye!
+=== puma startup: 2015-09-12 00:37:29 -0700 ===
+[24292] * Starting control server on unix:///tmp/puma-status-1442043449340-24292
+[24292] - Gracefully shutting down workers...
+[24298] Early termination of worker
+[24292] === puma shutdown: 2015-09-12 00:37:30 -0700 ===
+[24292] - Goodbye!
+=== puma startup: 2015-09-12 00:39:03 -0700 ===
+[24598] * Starting control server on unix:///tmp/puma-status-1442043543001-24598
+[24598] - Worker 0 (pid: 24604) booted, phase: 0
+[24598] - Gracefully shutting down workers...
+[24598] === puma shutdown: 2015-09-12 00:44:55 -0700 ===
+[24598] - Goodbye!
+=== puma startup: 2015-09-12 00:52:35 -0700 ===
+[25017] * Starting control server on unix:///tmp/puma-status-1442044355007-25010
+[25017] - Worker 0 (pid: 25024) booted, phase: 0
+[25017] Early termination of worker
+[25024] ! Detected parent died, dying
+=== puma startup: 2015-09-12 01:04:47 -0700 ===
+[25873] * Starting control server on unix:///tmp/puma-status-1442045087716-25868
+[25873] - Worker 0 (pid: 25880) booted, phase: 0

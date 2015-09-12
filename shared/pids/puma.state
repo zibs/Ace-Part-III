@@ -1,0 +1,30 @@
+---
+pid: 25873
+config: !ruby/object:Puma::Configuration
+  cli_options: 
+  conf: 
+  options:
+    :min_threads: 1
+    :max_threads: 6
+    :quiet: true
+    :debug: false
+    :binds:
+    - unix:///home/raworth/ace/shared/sockets/puma.sock
+    :workers: 1
+    :daemon: true
+    :mode: :http
+    :before_fork: []
+    :worker_timeout: 60
+    :worker_shutdown_timeout: 30
+    :environment: production
+    :redirect_stdout: "/home/raworth/ace/shared/log/puma.stdout.log"
+    :redirect_stderr: "/home/raworth/ace/shared/log/puma.stderr.log"
+    :redirect_append: true
+    :pidfile: "/home/raworth/ace/shared/pids/puma.pid"
+    :state: "/home/raworth/ace/shared/pids/puma.state"
+    :control_url: unix:///tmp/puma-status-1442045087716-25868
+    :worker_directory: "/home/raworth/ace"
+    :config_file: config/puma.rb
+    :control_url_temp: "/tmp/puma-status-1442045087716-25868"
+    :control_auth_token: e76acb4e31c965b4ce79a63437bf6e2
+    :tag: ace
