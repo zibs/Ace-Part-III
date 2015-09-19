@@ -1,51 +1,56 @@
-<h1 class = "poem-title">
-<%= @new_word %>
-</h1>
-
-<article class="row">
-	<!-- THE LONG POEM -->
-<section class="col-md-6">	
-<!-- PLACE THE FIRST TWO LINES TOGETHER -->
-<section class="line-wrapper"> 
-		<section class="lefto col-md-6">
-			<p> <%= @first_left.join(" ") %> </p>
-		</section>
-		<section class="righty col-md-6">
-			<p> <%= @first_right.join(" ") %> </p>
-		</section>	
-	</section>
-<!-- PLACE SHUFFLEDPOEM -->
-<% @Ace.in_groups_of(2, false) do |shard| %>
-
-	<section class="line-wrapper"> 
-		<section class="lefto col-md-6">
-			<p> <%= shard[0].join(" ") %> </p>
-		</section>
-		<section class="righty col-md-6">
-			<p> <%= shard[1].join(" ") if shard[1].present? %> </p>
-		</section>
-		<br>
-	</section>
-
-<% end %>
-<!-- PLACE THE LAST LINES TOGETHER -->
-<section class="line-wrapper"> 
-		<section class="lefto col-md-6">
-			<p> <%= @last_left.join(" ") %> </p>
-		</section>
-		<section class="righty col-md-6">
-			<p> <%= @last_right.join(" ") %> </p>
-		</section>	
-	</section>
-</section>
-<!-- END THE LONG POEM..for now -->
+<% flash.each do |message_type, message | %>
+        <%=content_tag(:div, message, class: "fade-out alert alert-#{message_type}", style: "display:inline-block") %>
+        <% end %> 
+<%= render 'long_poem' %>
 
 <!-- BEGIN OTHERNESSES -->
-<section class="col-md-6">
+
+<section class="col-md-6 col-sm-6 col-xs-6">
+<!-- SVG CIRCLE -->
+<section class = "the-center-cannot-hold text-center">
+	<svg height="140" width="140" class = 'hvr-wobble-skew'>
+	  <circle id = "periphery" class = "hvr-wobble-skew" cx="55" cy="50" r="40" stroke="#00DDFF" stroke-width="3" fill="white" />
+	</svg>
+</section>
+
+<!-- BEGIN LINKS -->
+<section class="links text-center">
+
+<section class="row options">
+	<article class="col-md-6 col-md-offset-3">
+		<p class = "possible poetries">Poetries</p>
+
+		<section class="poems text-left">
+			<%= link_to "luelttettsers", luelttettsers_url %>
+			<br>
+			<%= link_to "RilK(e)ittler's Ninth Elegy", rilkittler_url %>
+			<br>
+			<%= link_to "Self-Portrait in a Concave Mirror", selfportrait_path %>
+			<br>
+			<%= link_to "Hot Network Questions", hotnetworkquestions_path %>
+		</section>
+
+	</article>
+</section>
+
+<section class="row options">
+	<article class="col-md-6 col-md-offset-3 essays">
+		<p class = "possible">Essays</p>
+	</article>
+</section>
+
+<section class="row options">
+	<article class="col-md-6 col-md-offset-3 about">
+		<p class = "possible">About</p>
+	</article>
+</section>
+</section>
+	
+	
+
 
 
 
 
 
 </section>
-</article>
