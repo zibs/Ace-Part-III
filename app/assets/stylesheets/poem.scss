@@ -7,33 +7,249 @@
 @import "bootstrap";
 body {
     // font-family: 'Open Sans', sans-serif;
+    position: relative;
     font-family: 'Times New Roman', sans-serif;
     // width: 70%;
     margin: 0 auto;
 }
+
 .alert {
     position: absolute;
 }
 
+// LONG POEM DETAILS
 .poem-title {
     margin: 8% 0 5% 0;
     font-family: "Roboto";
     font-size: 3em;
     font-weight: lighter;
     text-transform: uppercase;
-    
 }
-
 
 p {
     font-size: 1.25em;
-
 }
 
 .closing-couplet {
     font-size: 5em;
     font-style: italic;
+}
 
+.the-center-cannot-hold {}
+
+.the-center-cannot-hold > svg > circle {
+    cursor: pointer;
+}
+
+section.options {
+    margin-bottom: 10%;
+    padding-right: 4%;
+    &:first-of-type {
+        margin-top: 15%;
+    }
+    &:last-of-type {
+        margin-top: 15%;
+        font-size: 0.85em;
+    }
+}
+
+// DISPLAY
+.links {
+    .possible {
+        display: none;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 0.25em 0.75em;
+        &:active {
+
+        }
+    }
+    .poems {
+        display: none;
+        a {
+            color: black;
+            margin-right: 5%;
+            font-size: 1.25em;
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+// essays
+.essaytries {
+    display: none;
+}
+// aboutot
+.abbot {
+    display: none;
+    line-height: 1.5em;
+    font-size: 1.25em;
+}
+// ABOUT EACH POEM
+.close-the-poetic-loop {
+    display: none;
+}
+
+.options {
+    font-family: 'Raleway', sans-serif;
+}
+
+.poetries-wrapper {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.25em 0.75em
+}
+
+#only-once {
+    margin-top: 4vh;
+    width: 50%;
+    word-wrap: break-word;
+    line-height: 2.0em;
+    font-size: 1.5em;
+    h1 {
+        font-family: 'Raleway', sans-serif;
+    }
+    #excess-of-being {
+        background-color: white;
+        border: none;
+        font-family: "Roboto";
+        position: relative;
+        top: 5%;
+        left: 30vw;
+        font-size: 1.25em;
+    }
+}
+
+// LUELTTETTSERS
+.luelttettsers-title {
+    margin-top: 5%;
+}
+
+.luelttettsers_liltoesters {
+    margin-top: 10vh;
+    > p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 5vh;
+    }
+}
+
+// Ashbery
+.selfportrait-title {
+    margin-bottom: 5%;
+}
+
+.ashbery pre.concave {
+    font-family: "Times New Roman";
+    font-size: 1.25em;
+    background-color: white;
+    border: none;
+    margin-bottom: 0;
+}
+
+// Silliman Network
+.hotnetwork-title {
+    margin-bottom: 5%;
+}
+
+p.networkpoem {
+    font-family: "Times New Roman";
+    font-size: 1.25em;
+    background-color: white;
+    border: none;
+    margin-bottom: 0;
+}
+
+
+/* Wobble Skew */
+
+@-webkit-keyframes hvr-wobble-skew {
+    16.65% {
+        -webkit-transform: skew(-12deg);
+        transform: skew(-12deg);
+    }
+    33.3% {
+        -webkit-transform: skew(10deg);
+        transform: skew(10deg);
+    }
+    49.95% {
+        -webkit-transform: skew(-6deg);
+        transform: skew(-6deg);
+    }
+    66.6% {
+        -webkit-transform: skew(4deg);
+        transform: skew(4deg);
+    }
+    83.25% {
+        -webkit-transform: skew(-2deg);
+        transform: skew(-2deg);
+    }
+    100% {
+        -webkit-transform: skew(0);
+        transform: skew(0);
+    }
+}
+
+@keyframes hvr-wobble-skew {
+    16.65% {
+        -webkit-transform: skew(-12deg);
+        transform: skew(-12deg);
+    }
+    33.3% {
+        -webkit-transform: skew(10deg);
+        transform: skew(10deg);
+    }
+    49.95% {
+        -webkit-transform: skew(-6deg);
+        transform: skew(-6deg);
+    }
+    66.6% {
+        -webkit-transform: skew(4deg);
+        transform: skew(4deg);
+    }
+    83.25% {
+        -webkit-transform: skew(-2deg);
+        transform: skew(-2deg);
+    }
+    100% {
+        -webkit-transform: skew(0);
+        transform: skew(0);
+    }
+}
+
+.hvr-wobble-skew {
+    // display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.hvr-wobble-skew:hover,
+.hvr-wobble-skew:focus,
+.hvr-wobble-skew:active {
+    -webkit-animation-name: hvr-wobble-skew;
+    animation-name: hvr-wobble-skew;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 0.9em;
+  }
+ .close-the-poetic-loop {
+    display: initial;
+  }
 }
 
 // pseudo collection:

@@ -1,5 +1,12 @@
-Rails.application.routes.draw do
+  Rails.application.routes.draw do
+  
   root 'poem#index'
+  
+  get 'luelttettsers'                     => 'poem#luelttettsers'
+  get 'rilkittler'                        => 'poem#rilkittler'
+  get 'Self-Portrait-in-a-Concave-Mirror' => 'poem#selfportrait',        as: :selfportrait
+  get 'Hot-Network-Questions'             => 'poem#hotnetworkquestions', as: :hotnetworkquestions
+  get 'Western-Birds'                     => 'poem#birds',               as: :birds
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

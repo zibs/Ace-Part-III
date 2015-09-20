@@ -21,4 +21,23 @@ class PoemController < ApplicationController
 	flash[:success] = "you've contributed the word: <b><em>#{@new_word}</em></b> ... how poetic ...".html_safe
 	
   end
+
+  def luelttettsers         
+  end
+
+  def rilkittler
+  end
+
+  def selfportrait
+  end
+
+  def hotnetworkquestions
+  end
+
+  def birds
+  end
+  
+
+
+  
 end

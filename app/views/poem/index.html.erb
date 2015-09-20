@@ -15,42 +15,47 @@
 
 <!-- BEGIN LINKS -->
 <section class="links text-center">
-
 <section class="row options">
-	<article class="col-md-6 col-md-offset-3">
+	<article class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
+		
 		<p class = "possible poetries">Poetries</p>
+		
+		<section class="poems row text-left">
 
-		<section class="poems text-left">
 			<%= link_to "luelttettsers", luelttettsers_url %>
-			<br>
+			<br><br>
 			<%= link_to "RilK(e)ittler's Ninth Elegy", rilkittler_url %>
-			<br>
+			<br><br>
 			<%= link_to "Self-Portrait in a Concave Mirror", selfportrait_path %>
-			<br>
+			<br><br>
 			<%= link_to "Hot Network Questions", hotnetworkquestions_path %>
+
 		</section>
 
 	</article>
 </section>
 
 <section class="row options">
-	<article class="col-md-6 col-md-offset-3 essays">
-		<p class = "possible">Essays</p>
+	<article class="col-md-6 col-md-offset-3 essays col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
+		<p class = "possible assays">Essays</p>
+		
+		<section class="essaytries text-center">
+			<p><em>coming soon...</em></p>
+		</section>
+
 	</article>
 </section>
 
 <section class="row options">
-	<article class="col-md-6 col-md-offset-3 about">
-		<p class = "possible">About</p>
+	<article class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12  about">
+		<p class = "possible aboot">About</p>
+		<section class="abbot text-left">
+			<p>The poem on the left is a long poem in progress. In fact, you contributed the word <b><%= @new_word %></b> to it just now. The poem accrues a new and randomized word from the English language each time this webpage is accessed or reloaded. Please share this page on sites with webscraping robots so that we can create a great poem together, and without much effort. </p>
+			<br>
+			<p><em>~ Write a poem just by refreshing your browser ~</em></p>
+		</section>
 	</article>
 </section>
 </section>
-	
-	
-
-
-
-
-
 
 </section>
