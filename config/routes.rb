@@ -7,6 +7,8 @@
   get 'Self-Portrait-in-a-Concave-Mirror' => 'poem#selfportrait',        as: :selfportrait
   get 'Hot-Network-Questions'             => 'poem#hotnetworkquestions', as: :hotnetworkquestions
   get 'Western-Birds'                     => 'poem#birds',               as: :birds
+  get 'Bread'                             => 'poem#bread',               as: :bread
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

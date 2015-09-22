@@ -36,6 +36,10 @@ class PoemController < ApplicationController
 
   def birds
   end
+
+  def bread
+  end
+  
   
 
 
