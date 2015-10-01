@@ -39,6 +39,12 @@ class PoemController < ApplicationController
 
   def bread
   end
+
+  def robopoetics
+  end
+
+  def spuilyie
+  end
   
   
 

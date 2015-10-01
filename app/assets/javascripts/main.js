@@ -59,6 +59,6 @@ $(document).ready(function() {
 // DISPLAY ABOUT POETRY PER POEM PAGE
 $(document).ready(function() {
     $("#periphery").hover(function() {
-        $(".close-the-poetic-loop").stop(true, true).fadeToggle("slow");
+        $(".close-the-poetic-loop").stop(true, true).fadeIn("slow");
     });
 });

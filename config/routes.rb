@@ -1,13 +1,16 @@
   Rails.application.routes.draw do
   
   root 'poem#index'
-  
+  # poems
   get 'luelttettsers'                     => 'poem#luelttettsers'
   get 'rilkittler'                        => 'poem#rilkittler'
   get 'Self-Portrait-in-a-Concave-Mirror' => 'poem#selfportrait',        as: :selfportrait
   get 'Hot-Network-Questions'             => 'poem#hotnetworkquestions', as: :hotnetworkquestions
   get 'Western-Birds'                     => 'poem#birds',               as: :birds
   get 'Bread'                             => 'poem#bread',               as: :bread
+  get 'spuilyie'                          => 'poem#spuilyie'
+  # essays
+  get 'Robopoetics'                       => 'poem#robopoetics',         as: :robopoetics
 
 
   # The priority is based upon order of creation: first created -> highest priority.
