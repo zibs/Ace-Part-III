@@ -9,8 +9,11 @@
   get 'Western-Birds'                     => 'poem#birds',               as: :birds
   get 'Bread'                             => 'poem#bread',               as: :bread
   get 'spuilyie'                          => 'poem#spuilyie'
+  get 'The Sun, Moon'                     => 'poem#sunmoon',             as: :sunmoon
+  get 'yoloy'                             => 'poem#yoloy'
   # essays
   get 'Robopoetics'                       => 'poem#robopoetics',         as: :robopoetics
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

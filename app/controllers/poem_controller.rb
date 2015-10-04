@@ -45,8 +45,12 @@ class PoemController < ApplicationController
 
   def spuilyie
   end
-  
-  
+
+  def sunmoon
+  end
+
+  def yoloy 
+  end
 
 
   

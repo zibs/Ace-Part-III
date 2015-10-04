@@ -60,16 +60,16 @@ section.options {
         cursor: pointer;
         border-radius: 5px;
         padding: 0.25em 0.75em;
-        &:active {
-
-        }
+        &:active {}
     }
     .poems {
         display: none;
         a {
             color: black;
+            display: block;
             margin-right: 5%;
-            font-size: 1.25em;
+            margin-top: 2.5%;
+            font-size: 1.1em;
             text-decoration: none;
             &:hover {
                 text-decoration: none;
@@ -77,16 +77,19 @@ section.options {
         }
     }
 }
+
 // essays
 .essaytries {
     display: none;
 }
+
 // aboutot
 .abbot {
     display: none;
     line-height: 1.5em;
-    font-size: 1.25em;
+    font-size: 1em;
 }
+
 // ABOUT EACH POEM
 .close-the-poetic-loop {
     display: none;
@@ -94,6 +97,7 @@ section.options {
 
 .options {
     font-family: 'Raleway', sans-serif;
+
 }
 
 .poetries-wrapper {
@@ -166,38 +170,97 @@ p.networkpoem {
 .bird-title {
     // background-color: red;
 }
+
 .darklinglistening {
     // background-color: green;
-    p { margin-top: 8%;
+    p {
+        margin-top: 8%;
         // background-color: orange;
     }
 }
+
 // BREAD
-
-
 .bread-poem img {
     margin-bottom: 3%;
-
 }
 
 .robopoetics-wrap {
     text-align: justify;
-}   pre {
-    background-color: white;
-    border: none;
+    pre {
+        background-color: white;
+        border: none;
+    }
 }
 
+// sunmoon 
+.artemis, .apollo {
+    pre {
+        background-color: white;
+        border: none;
+        font-family: "Cousine", serif;
+        font-size: 1.1em;
+        white-space: pre-wrap;
+        /* CSS 3 */
+        white-space: -moz-pre-wrap;
+        /* Mozilla, since 1999 */
+        white-space: -pre-wrap;
+        /* Opera 4-6 */
+        white-space: -o-pre-wrap;
+        /* Opera 7 */
+        text-align: justify;
+        white-space: pre-wrap;
+        word-break: normal;
+    }
+}
+
+// yoloy
+
+.yolotitle h1 {
+    margin: 5% 0 ;
+
+}
+
+.yoloy {
+
+    pre {
+        background-color: white;
+        border: none;
+        font-family: "Times New Roman", serif;
+        font-size: 1.1em;
+        white-space: pre-wrap;
+        /* CSS 3 */
+        white-space: -moz-pre-wrap;
+        /* Mozilla, since 1999 */
+        white-space: -pre-wrap;
+        /* Opera 4-6 */
+        white-space: -o-pre-wrap;
+        /* Opera 7 */
+        text-align: justify;
+        white-space: pre-wrap;
+        word-break: normal;
+    }
+}
 
 // spuilyie
-
 .spuilyie {
     font-size: 5em;
 }
+
+
 /* Wobble Skew */
+
+
 /* Wobble Skew */
+
+
 /* Wobble Skew */
+
+
 /* Wobble Skew */
+
+
 /* Wobble Skew */
+
 @-webkit-keyframes hvr-wobble-skew {
     16.65% {
         -webkit-transform: skew(-12deg);
@@ -277,12 +340,12 @@ p.networkpoem {
 }
 
 @media only screen and (max-width: 480px) {
-  body {
-    font-size: 0.9em;
-  }
- .close-the-poetic-loop {
-    display: initial;
-  }
+    body {
+        font-size: 0.9em;
+    }
+    .close-the-poetic-loop {
+        display: initial;
+    }
 }
 
 // pseudo collection:
