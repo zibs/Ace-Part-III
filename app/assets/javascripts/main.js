@@ -23,6 +23,7 @@ $(document).ready(function() {
         $(".possible").fadeToggle(500).css({"display":"inline-block", "border":"initial"});
         $(".poems").fadeOut(500);
         $(".essaytries").fadeOut(500);
+        $(".abbot").fadeOut(500);
     });
 });
 
