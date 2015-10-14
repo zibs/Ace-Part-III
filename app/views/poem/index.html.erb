@@ -2,9 +2,7 @@
         <%=content_tag(:div, message, class: "fade-out alert alert-#{message_type}", style: "display:inline-block") %>
         <% end %> 
 <%= render 'long_poem' %>
-
 <!-- BEGIN OTHERNESSES -->
-
 <section class="col-md-6 col-sm-6 col-xs-6">
 <!-- SVG CIRCLE -->
 <section class = "the-center-cannot-hold text-center">
@@ -12,16 +10,12 @@
 	  <circle id = "periphery" class = "hvr-wobble-skew" cx="55" cy="50" r="40" stroke="#00DDFF" stroke-width="3" fill="white" />
 	</svg>
 </section>
-
 <!-- BEGIN LINKS -->
 <section class="links text-center">
 <section class="row options">
 	<article class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
-		
 		<p class = "possible poetries">Poetries</p>
-		
 		<section class="poems row text-center">
-
 			<%= link_to "luelttettsers", luelttettsers_url %>
 			
 			<%= link_to "RilK(e)ittler's Ninth Elegy", rilkittler_url %>
@@ -37,20 +31,17 @@
 			<%= link_to "Artemis, Apollo", sunmoon_path %>
 
 			<%= link_to "yoloy", yoloy_path %>
-
+			<%= link_to "Case Study: B", casestudyb_path %>
 		</section>
-
 	</article>
 </section>
 
 <section class="row options">
 	<article class="col-md-6 col-md-offset-3 essays col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
 		<p class = "possible assays">Essays</p>
-	
 		<section class="essaytries text-center">
 			<p><em>coming soon...</em></p>
 		</section>
-
 	</article>
 </section>
 

@@ -2,17 +2,20 @@
   
   root 'poem#index'
   # poems
-  get 'luelttettsers'                     => 'poem#luelttettsers'
-  get 'rilkittler'                        => 'poem#rilkittler'
-  get 'Self-Portrait-in-a-Concave-Mirror' => 'poem#selfportrait',        as: :selfportrait
-  get 'Hot-Network-Questions'             => 'poem#hotnetworkquestions', as: :hotnetworkquestions
-  get 'Western-Birds'                     => 'poem#birds',               as: :birds
-  get 'Bread'                             => 'poem#bread',               as: :bread
-  get 'spuilyie'                          => 'poem#spuilyie'
-  get 'The Sun, Moon'                     => 'poem#sunmoon',             as: :sunmoon
-  get 'yoloy'                             => 'poem#yoloy'
+  get 'luelttettsers'                            => 'poem#luelttettsers'
+  get 'rilkittler'                               => 'poem#rilkittler'
+  get 'Self-Portrait-in-a-Concave-Mirror'        => 'poem#selfportrait',        as: :selfportrait
+  get 'Hot-Network-Questions'                    => 'poem#hotnetworkquestions', as: :hotnetworkquestions
+  get 'Western-Birds'                            => 'poem#birds',               as: :birds
+  get 'Bread'                                    => 'poem#bread',               as: :bread
+  get 'spuilyie'                                 => 'poem#spuilyie'
+  get 'The-Sun-The-Moon'                         => 'poem#sunmoon',             as: :sunmoon
+  get 'yoloy'                                    => 'poem#yoloy'
+  get 'Create-Password'                          => 'poem#createpassword'
+  get 'Case-Study-B'                             => 'poem#casestudyb',           as: :casestudyb
   # essays
-  get 'Robopoetics'                       => 'poem#robopoetics',         as: :robopoetics
+  get 'Robopoetics'                              => 'poem#robopoetics',          as: :robopoetics
+  get 'We-Can-Just-Check-The-Numbers-Afterwards' => 'poem#checkthenumbersafter', as: :checkthenumbersafter
 
 
 

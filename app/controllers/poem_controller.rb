@@ -21,7 +21,7 @@ class PoemController < ApplicationController
 	flash[:success] = "you've contributed the word: <b><em>#{@new_word}</em></b> ... how poetic ...".html_safe
 	
   end
-
+  # POEMS
   def luelttettsers         
   end
 
@@ -40,9 +40,6 @@ class PoemController < ApplicationController
   def bread
   end
 
-  def robopoetics
-  end
-
   def spuilyie
   end
 
@@ -50,6 +47,20 @@ class PoemController < ApplicationController
   end
 
   def yoloy 
+  end
+  
+  def createpassword
+  end
+
+  def casestudyb
+  end
+
+  # ESSAYS
+
+  def robopoetics
+  end
+
+  def checkthenumbersafter
   end
 
 
