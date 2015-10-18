@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$(".poetry-wrappers").last().addClass("closing-couplet");
 	$(".poetry-wrappers").last().prev().addClass("closing-couplet");
-    $(".fade-out").fadeOut(5000);
+    $(".fade-out").fadeOut(8000);
 });
 // RANDOM COLORS EACH GET REQUEST
 $(document).ready(function() {
