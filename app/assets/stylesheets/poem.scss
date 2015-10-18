@@ -75,12 +75,22 @@ section.options {
                 text-decoration: none;
             }
         }
+        // essays
     }
-}
-
-// essays
-.essaytries {
-    display: none;
+    .essaytries {
+        display: none;
+        a {
+            color: black;
+            display: block;
+            margin-right: 5%;
+            margin-top: 2.5%;
+            font-size: 1.1em;
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 // aboutot
@@ -236,11 +246,9 @@ p.networkpoem {
         white-space: pre-wrap;
         word-break: normal;
     }
-}
-
-// spuilyie
-.spuilyie {
-    font-size: 5em;
+    &:last-of-type {
+        margin-bottom: 10%;
+    }
 }
 
 // CREATE PASSWORD
@@ -268,8 +276,8 @@ p.networkpoem {
 .checkthenumbers-wrap {
     margin-bottom: 5%;
 }
-.checkthenumbers {
 
+.checkthenumbers {
     pre {
         background-color: white;
         margin-bottom: 5%;
@@ -287,20 +295,22 @@ p.networkpoem {
         // text-align: justify;
         white-space: pre-wrap;
         word-break: normal;
-
     }
     p {
         margin: 10% 0;
         font-size: 1.5em;
         line-height: 1.75em;
-        text-align: justify; 
+        text-align: justify;
+        &:last-of-type {
+            margin-top: 1.5%;
+        }
     }
 }
-
 
 .casestudyb-title {
     font-family: "Times New Roman";
 }
+
 .firstb {
     font-size: 50em;
 }
@@ -499,10 +509,6 @@ html {
     // overflow: hidden;
 }
 
-
-
-
-
 .parallax {
     font-size: 200%;
 }
@@ -697,5 +703,58 @@ html {
     }
 }
 
-// pseudo collection:
+// AEIOUUUU
+.aeiou {
+    pre {
+        background-color: white;
+        margin-bottom: 5%;
+        // border: none;
+        font-family: "Times New Roman", serif;
+        font-size: 1.25em;
+        white-space: pre-wrap;
+        /* CSS 3 */
+        white-space: -moz-pre-wrap;
+        /* Mozilla, since 1999 */
+        white-space: -pre-wrap;
+        /* Opera 4-6 */
+        white-space: -o-pre-wrap;
+        /* Opera 7 */
+        // text-align: justify;
+        white-space: pre-wrap;
+        word-break: normal;
+    }
+    p {
+        margin: 0.5% 0;
+        font-size: 1.25em;
+        line-height: 1.25em;
+        text-align: justify;
+        &:nth-child(14n) {
+            margin-bottom: 2.5%;
+            &:last-child {
+                margin-bottom: 10%;
+            }
+        }
+    }
+}
+
+// spuliyuea
+// spuilyie
+.spuilyie {
+    h1 {
+        font-size: 10em;
+    }
+    h3 {
+        font-size: 5em;
+    }
+}
+
+#spuliyaudio {}
+
+.spulword {}
+
+.spulword.spulselected {
+    color: blue;
+    cursor: pointer;
+}
+
 // first-letter and :first-line// You can use Sass (SCSS) here: http://sass-lang.com/

@@ -55,6 +55,10 @@ class PoemController < ApplicationController
   def casestudyb
   end
 
+  def aeiou
+  end
+  
+
   # ESSAYS
 
   def robopoetics

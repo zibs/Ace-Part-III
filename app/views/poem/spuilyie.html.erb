@@ -1,49 +1,139 @@
 <%= provide(:title, "Spuilyie") %>
+<script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
 <%= render 'layouts/omphalos' %>
+<!-- The Prelude -->
+<article class="close-the-poetic-loop row">
+  <section class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-5 col-xs-8 col-xs-offset-2">
+  <p class = "text-center">Spupposedly a word, Graeme Wahn also invented this poetic genre in the month of September, in the year of 2015.
+  </p>
+  </section>
+</article>
 <!-- The TITLE -->
-<article class="row">
-	<section class="col-md-offset-4 col-sm-offset-2 col-xs-offset-2">
+<article class="row ">
+	<section class="col-md-offset-4 col-sm-offset-2 col-xs-offset-2 spuilyie">
 	<h1>spuilyie</h1>
 	</section>
 </article>
 <!-- THE POEM -->
 <article class="row">
-	<section class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-12 spuilyie">
-	<h3>Spuilyie -> uly  spuilyie, sapuiilyiae pyie, sepiuilyoieei, sepuiolyie pe sopiuilayie, spuilyie pilyie spuiy, spuilyie spulyie, spauilyie. Sepauiliyoie slyie, sopouailyioea.
-	Uilyi plie, spauiilyie, yie sy se, spuilyie puilyie, sapuialoyiieo, spuiolyie p spulye. Spuoiilyie spiuilyie sepeuaiolyieo. Sipuielayoiee spouailiyiei, sipauilyiee.</h3>
+	<section class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 spuilyie">
+	<h3>
+		<span class="spulword" id="w1">Spuilyie</span>
+		<span class="spulword" id="w2">-></span>
+		<span class="spulword" id="w3">uly</span>
+		<span class="spulword" id="w4">spuilyie,</span>
+		<span class="spulword" id="w5">sapuiilyiae</span>
+		<span class="spulword" id="w6">pyie,</span>
+		<span class="spulword" id="w7">sepiuilyoieei,</span>
+		<span class="spulword" id="w8">sepuiolyie</span>
+		<span class="spulword" id="w9">pe</span>
+		<span class="spulword" id="w10">sopiuilayie,</span>
+		<span class="spulword" id="w11">spuilyie</span>
+		<span class="spulword" id="w12">pilyie</span>
+		<span class="spulword" id="w13">spuiy,</span>
+		<span class="spulword" id="w14">spuilyie</span>
+		<span class="spulword" id="w15">spulyie,</span>
+		<span class="spulword" id="w16">spauilyie.</span>
+		<span class="spulword" id="w17">Sepauiliyoie</span>
+		<span class="spulword" id="w18">slyie,</span>
+		<span class="spulword" id="w19">sopouailyioea.</span>
+		<span class="spulword" id="w20">Uilyi</span>
+		<span class="spulword" id="w21">plie,</span>
+		<span class="spulword" id="w22">spauiilyie,</span>
+		<span class="spulword" id="w23">yie</span>
+		<span class="spulword" id="w24">sy</span>
+		<span class="spulword" id="w25">se,</span>
+		<span class="spulword" id="w26">spuilyie</span>
+		<span class="spulword" id="w27">puilyie,</span>
+		<span class="spulword" id="w28">sapuialoyiieo,</span>
+		<span class="spulword" id="w29">spuiolyie</span>
+		<span class="spulword" id="w30">spulye.</span>
+		<span class="spulword" id="w31">Spuoiilyie</span>
+		<span class="spulword" id="w32">spiuilyie</span>
+		<span class="spulword" id="w33">sepeuaiolyieo.</span>
+		<span class="spulword" id="w34">Sipuielayoiee</span>
+		<span class="spulword" id="w35">spouailiyiei,</span>
+		<span class="spulword" id="w36">sipauilyiee.</span></h3>
 	</section>
 </article>
 <article class="row">
 	<section class="text-center">
-		<%= audio_tag("speilyei.mp3", autoplay: true, controls: true) %>
+		<%= audio_tag("speul2.mp3",  controls: true, id: "spuliyaudio") %>
 	</section>
-</article>
+</article><br>
+<br>
+<br>
+<br>
 <article class="row">
-	<section class="text-center">
-		<%= audio_tag("speul2.mp3", autoplay: true, controls: true) %>
-	</section>
-</article>
-<article class="row">
-	<section class="text-center">
-		<%= audio_tag("spel3.mp3", autoplay: true, controls: true) %>
-	</section>
-</article>
-<article class="row">
-	<section class="text-center">
-		<%= audio_tag("spel4.mp3", autoplay: true, controls: true) %>
-	</section>
-</article>
-<article class="row">
-	<section class="text-center">
-		<%= audio_tag("spel5.mp3", autoplay: true, controls: true) %>
-	</section>
-</article>
-<article class="row">
-<%= image_tag("spell2.png", alt: "spuilyie!", class: "img-responsive center-block") %>
+<%= image_tag("spell2.png", alt: "spuilyie!", class: "img-responsive center-block") %> 
+<br>
+<br>
+<br>
+<br>
 <%= image_tag("spell3.png", alt: "spuilyie!", class: "img-responsive center-block") %>
+<br>
+<br>
+<br>
+<br>
 <%= image_tag("spell4.png", alt: "spuilyie!", class: "img-responsive center-block") %>
+<br>
+<br>
+<br>
+<br>
 </article>
+<script type = "text/javascript">
 
+$(document).ready(function() {
+  var  pop = Popcorn("#spuliyaudio");
 
-
-
+    var wordTimes = {
+    "w1": { start: 0, end: 1 },
+    "w2": { start: 0.9, end: 1.2 },
+    "w3": { start: 1.2, end: 1.5 },
+    "w4": { start: 1.5, end: 2.7 },
+    "w5": { start: 2.9, end: 3.8 },
+    "w6": { start: 3.9, end: 4.5 },
+    "w7": { start: 4.6, end: 6.0 },
+    "w8": { start: 6.1, end: 7.0 },
+    "w9": { start: 7.2, end: 7.7 },
+    "w10": { start: 7.4, end: 9.0 },
+    "w11": { start: 9.1, end: 9.8 },
+    "w12": { start: 9.6, end: 10.20 },
+    "w13": { start: 10.3, end: 11.0 },
+    "w14": { start: 11.1, end: 11.9 },
+    "w15": { start: 12.0, end: 12.5 },
+    "w16": { start: 12.6, end: 13.5 },
+    "w17": { start: 13.8, end: 14.8 },
+    "w18": { start: 14.9, end: 15.5 },
+    "w19": { start: 15.8, end: 17.2 },
+    "w20": { start: 17.5, end: 18.0 },
+    "w21": { start: 18.1, end: 18.5 },
+    "w22": { start: 18.8, end: 19.4 },
+    "w23": { start: 19.9, end: 20.3 },
+    "w24": { start: 20.4, end: 20.8 },
+    "w25": { start: 20.9, end: 21.4 },
+    "w26": { start: 21.5, end: 21.9 },
+    "w27": { start: 22.0, end: 22.5 },
+    "w28": { start: 22.1, end: 24.1 },
+    "w29": { start: 24.2, end: 25.2 },
+    "w30": { start: 25.3, end: 25.9 },
+    "w31": { start: 26.0, end: 27.0 },
+    "w32": { start: 27.4, end: 28.4 },
+    "w33": { start: 28.5, end: 29.5 },
+    "w34": { start: 29.6, end: 30.8 },
+    "w35": { start: 31.9, end: 32.8 },
+    "w36": { start: 32.9, end: 34.5 }
+};
+  $.each(wordTimes, function(id, time) {
+     pop.footnote({
+        start: time.start,
+        end: time.end,
+        text: '',
+        target: id,
+        effect: "applyclass",
+        applyclass: "spulselected"
+    });
+});
+pop.play();
+});
+</script>

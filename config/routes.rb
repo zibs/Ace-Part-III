@@ -13,6 +13,7 @@
   get 'yoloy'                                    => 'poem#yoloy'
   get 'Create-Password'                          => 'poem#createpassword'
   get 'Case-Study-B'                             => 'poem#casestudyb',           as: :casestudyb
+  get 'aeiou'                                    => 'poem#aeiou'
   # essays
   get 'Robopoetics'                              => 'poem#robopoetics',          as: :robopoetics
   get 'We-Can-Just-Check-The-Numbers-Afterwards' => 'poem#checkthenumbersafter', as: :checkthenumbersafter

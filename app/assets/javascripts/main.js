@@ -47,14 +47,22 @@ $(document).ready(function() {
 $(document).ready(function() {
  $(".essays").click(function() {
     $(".assays").css({ "border": "3px solid " + random_color });
-    $(".essaytries").fadeToggle(500);
+    $(".essaytries").stop(true, true).fadeToggle(500);
     });
 });
+$(document).ready(function() {
+ $(".essaytries a").hover(function() {
+   $(this).css({ "border-bottom": "2px solid " + random_color });
+    }, function(){$(this).css({"border":"initial"}) 
+    });
+});
+
+
 // ABOUT PAGE
 $(document).ready(function() {
  $(".about").click(function() {
     $(".aboot").css({ "border": "3px solid " + random_color });
-    $(".abbot").fadeToggle(500);
+    $(".abbot").stop(true, true).fadeIn(500);
     });
 });
 // DISPLAY ABOUT POETRY PER POEM PAGE
@@ -63,3 +71,5 @@ $(document).ready(function() {
         $(".close-the-poetic-loop").stop(true, true).fadeIn("slow");
     });
 });
+
+// SPULIYA
