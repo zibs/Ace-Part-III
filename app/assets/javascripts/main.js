@@ -13,11 +13,11 @@ $(document).ready(function() {
     $(".possible").hover(function() {
         $(this).css({ "border": "3px solid " + random_color });
    });
- // }, function(){$(this).css({"border":"initial"}) 
+ // }, function(){$(this).css({"border":"initial"})
 });
 
 
-// THE CIRCLE EMBLEM ON FRONTPAGE
+// THE CIRCLE EMBLEM ON FRONTPAG`E
 $(document).ready(function() {
     $("#periphery").click(function() {
         $(".possible").fadeToggle(500).css({"display":"inline-block", "border":"initial"});
@@ -37,7 +37,7 @@ $(document).ready(function() {
 $(document).ready(function() {
  $(".poems a").hover(function() {
     $(this).css({ "border-bottom": "2px solid " + random_color });
-    }, function(){$(this).css({"border":"initial"}) 
+    }, function(){$(this).css({"border":"initial"})
     });
 });
 
@@ -53,7 +53,7 @@ $(document).ready(function() {
 $(document).ready(function() {
  $(".essaytries a").hover(function() {
    $(this).css({ "border-bottom": "2px solid " + random_color });
-    }, function(){$(this).css({"border":"initial"}) 
+    }, function(){$(this).css({"border":"initial"})
     });
 });
 
